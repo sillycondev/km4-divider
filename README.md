@@ -117,14 +117,6 @@ The main parameters (all editable in the Parameter List) are `W_ms50`, `W_ms35`,
 `Lstub6` and `Lstub8` (stub lengths, the main tuning knobs), `R_iso` (resistor value), the via radii, and the layer thicknesses
 `h_sub`, `h_bond`, `h_core` and `t_cu`.
 
-## Limitations
-
-* **`results/sparams_traced.csv` is traced from the screenshots, not exported from CST.** Expect about 0.1 dB error; it was
-  checked against the CST marker values at 2.416 GHz. Where a marker label covered a curve, the gap was filled from the
-  reciprocal curve (Sij = Sji, since the circuit is passive and reciprocal). S13 and S53 were not plotted.
-* **Phase is not available**, so phase balance is not reported. To add it, export a Touchstone file (*Post-Processing →
-  Import/Export → Touchstone*, 5 ports) to `results/KM4_divider.s5p`. That replaces the traced CSV.
-* The simulation uses lossless (PEC) metal. Copper loss and a fabricated prototype are future work.
 
 ## Next steps
 
