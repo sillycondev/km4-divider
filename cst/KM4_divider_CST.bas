@@ -1,30 +1,3 @@
-' ============================================================================================
-' CST Studio Suite macro: broadband equal-split 4-way Knochel-Mayer power divider/combiner
-' Implements: J. Furgal, K. Xu, J. H. Choi, J. K. Lee, 'Broadband Equal-Split Planar 4-Way Power
-'             Divider/Combiner Suitable for High Power Applications', EuMC 2020 (fc = 2.75 GHz)
-'
-' HOW TO USE: File > New project (empty, any template), then Home > Macros > Run Macro... > this file.
-'   Run it ONCE in an empty project. Everything is written to the History List, so it survives
-'   parameter changes / history updates.
-'
-' Circuit (Fig. 2): Z1=100, Z2=50, Z3=35, Z4=50, Z5=50, Z6=84.6, Z7=50, Z8=100 ohm, R=50 ohm
-'   Z1..Z5, Z7 = lambda/4 ; Z6, Z8 = lambda/2 open stubs.
-' Stack-up (Fig. 4, top to bottom):
-'   L1 microstrip | RO3003 20 mil | RO4450B 4 mil | L2 GND | RO3003 60 mil | RO4450B 4 mil |
-'   L3 stripline  | RO3003 60 mil | L4 GND | RO4450B 4 mil | RO3003 20 mil | L5 microstrip
-'   L1: Z4, Z5, resistors (L1-L2 vias to ground)   L3: Z1, Z6, Z7, Z8 + all ports   L5: Z2, Z3
-'   Vias: L3-L5 at each output node, L1-L5 at each Z2/Z3/Z4 node, L2-L4 ground stitching.
-' Line widths: 2-D quasi-static field solution for this exact stack-up (35 um copper).
-' Lengths: lambda/4 (or lambda/2) at 2.75 GHz using each line's effective permittivity,
-'   measured centre-to-centre between nodes.
-' The paper gives no layout dimensions; this layout is an original one that keeps the
-'   paper's topology, layer assignment, vias and stack-up.
-' Ports: 1 = input (bottom edge, x=-20), 2 = W, 3 = S, 4 = N, 5 = E (all on stripline L3).
-' Units: mm, GHz.
-' ============================================================================================
-
-Option Explicit
-
 Sub Main ()
 
     ' ---------------- parameters (edit in the CST Parameter List afterwards) ----------------
