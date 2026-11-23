@@ -1,4 +1,4 @@
-# Broadband 4-Way Equal Power Divider (Knochel-Mayer, 5-layer PCB) — CST Design & Simulation
+# Broadband 4-Way Equal Power Divider (Knochel-Mayer, 5-layer PCB) - CST Design & Simulation
 
 Design and full-wave simulation of a broadband, equal-split, in-phase **4-way Knochel-Mayer power divider/combiner**
 centred at **2.75 GHz** (S-band). It is built on a 5-layer microstrip/stripline board with vertical via interconnects,
