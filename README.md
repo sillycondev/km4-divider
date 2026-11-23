@@ -102,25 +102,6 @@ results/sparams_traced.csv       Magnitudes (dB) traced from those plots, 2–4 
 figures/                         Circuit, stack-up, exploded view, layer layouts, results summary
 ```
 
-## Reproducing the simulation
-
-1. CST Studio Suite: **File → New and Recent → New project**, an empty template is fine.
-2. **Home → Macros → Run Macro…** and select `cst/KM4_divider_CST.bas`. Run it **once** in an empty project.
-   Every step goes into the History List, so the model rebuilds when you edit a parameter.
-3. Check **Simulation → Setup Solver**: time-domain solver, S-parameters normalised to 50 Ω. The macro already sets
-   2–4 GHz, open boundaries and five waveguide ports on L3.
-4. **Start** the simulation. Results appear under *1D Results → S-Parameters*.
-
-The main parameters (all editable in the Parameter List) are `W_ms50`, `W_ms35`, `W_sl50`, `W_sl100`, `W_sl85` (line widths),
-`Lstub6` and `Lstub8` (stub lengths, the main tuning knobs), `R_iso` (resistor value), the via radii, and the layer thicknesses
-`h_sub`, `h_bond`, `h_core` and `t_cu`.
-
-
-## Next steps
-
-- Tune Z6/Z8 to centre the deepest match at 2.75 GHz
-- Re-run with finite-conductivity copper
-- Fabricate and measure on a VNA
 
 ## Reference
 
