@@ -101,7 +101,6 @@ cst/KM4_divider_CST.bas          CST VBA macro that builds the complete parametr
 results/screenshots/Sxy.png      CST result plots, one per S-parameter, plus an overlay of all curves
 results/sparams_traced.csv       Magnitudes (dB) traced from those plots, 2–4 GHz, 5 MHz step
 figures/                         Circuit, stack-up, exploded view, layer layouts, results summary
-docs/presentation.pdf / .pptx    Project presentation
 ```
 
 ## Reproducing the simulation
