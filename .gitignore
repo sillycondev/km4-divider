@@ -1,0 +1,20 @@
+# CST project files: large and machine-specific. Rebuild the model with cst/KM4_divider_CST.bas
+*.cst
+*.cst.lok
+*.lok
+**/Result/
+**/Model/
+**/Temp/
+**/ModelCache/
+**/DC/
+*.sat
+*.tmp
+
+# Keep Touchstone exports (results/*.s5p) — they are NOT ignored
+
+# Office / OS clutter
+~$*
+*.bak
+Thumbs.db
+desktop.ini
+.DS_Store

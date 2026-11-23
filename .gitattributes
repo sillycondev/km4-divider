@@ -1,0 +1,8 @@
+# CST runs on Windows: keep the macro with CRLF line endings
+*.bas  text eol=crlf
+*.csv  text eol=lf
+*.md   text eol=lf
+*.s?p  text
+*.png  binary
+*.pdf  binary
+*.pptx binary
